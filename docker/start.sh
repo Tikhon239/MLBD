@@ -1,1 +1,1 @@
-jupyter notebook --no-browser --port 9999 --ip='*' --allow-root
+jupyter notebook --no-browser --port 9986 --ip='*' --allow-root
