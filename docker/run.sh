@@ -3,11 +3,12 @@ docker run \
 	--privileged=true \
 	-t -i \
 	--publish-all=true \
-	-p 8888:8888 \
-	-p 9999:9999 \
-	-p 8088:8088 \
-	-p 7180:7180 \
-	-p 80:80 \
+	-p 8886:8886 \
+        -p 9986:9986 \
+   	-p 8086:8088 \
+    	-p 7186:7186 \
+    	-p 86:86 \
 	-v $(pwd)/..:/workspace \
-	ishugaepov/mlbd \
+	-v /home/breengles/mlbd_datasets:/workspace/data \
+	voudy/mlbd \
 	/usr/bin/docker-quickstart
